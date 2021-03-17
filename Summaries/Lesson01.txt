@@ -1,4 +1,2 @@
 03/17 A.What is React?
-524687268
 03/17 B.How to connect to GitHub? How to get data from GitHub?
-524687280
