@@ -1,0 +1,11 @@
+1- npm init -y
+2- create index.js file
+3- write console message in index.js
+4- run with "node index" or "node index.js"
+5- install "npm install babel-cli babel-preset-es2015 -g"
+6- write start scripts in package.json file;
+ "start":"babel-node index.js --presets es2015",
+7- npm start
+8- create mathModule.js
+9- write command ("const sum = (x, y) => x + y;") in mathModule.js
+10- import and use module file in index.js
