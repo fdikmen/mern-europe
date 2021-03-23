@@ -1,0 +1,12 @@
+03/23 A. Module System (Export, Default,As,* as)
+03/23 B. VCode Extensions (Prettier, Auto Complete Tag ,ES7 React/Redux/GraphQL/React-Native snippets)
+03/23 C. Hello World with React!
+03/23 D. What is package.json file?
+03/23 E. What is NPM? -> Node Package Manager
+NPM? | NPX? --> X: Execute
+npm i create-react-app -g
+create-react-app [projectname]
+---------------------------------
+npx create-react-app [projectname]
+
+NPM - YARN

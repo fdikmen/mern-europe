@@ -1,0 +1,10 @@
+1- Clear-> cls - clear
+cd -> for locate up-key -> old codes
+npm start -> for start
+2- npm install create-react-app -g
+create-react-app projectname / create-react-app .
+---------------------------------------
+npx create-react-app .
+
+3- PACKAGE.JSON
+, | ; | last row
