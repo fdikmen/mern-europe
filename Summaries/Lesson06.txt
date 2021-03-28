@@ -1,0 +1,4 @@
+03/28 A. Props -> this.props | props
+03/28 B. React Developer Tools
+03/28 C. PropsTypes & Default Props?
+03/28 D. Constructor

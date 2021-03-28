@@ -1,0 +1,3 @@
+npm run build |||| npm start
+Ctrl+C
+Ctrl+K+C -> Comment OR Ctrl + /   Ctrl+K+U -> Uncomment 
