@@ -5,10 +5,8 @@ import PropTypes from 'prop-types'
 export default class BlogItem extends Component {
     constructor(props){
         super(props);
-        console.log(props)
-        console.log(this.props)
-
-        
+       // console.log(props)
+       // console.log(this.props)      
       }
   /**
    * user={}
@@ -27,14 +25,18 @@ export default class BlogItem extends Component {
 
   //Default Props
   static defaultProps = {description:"One Desc",title:"One Title"}
-
+clickItem()
+{
+    console.log('Button clicked from BlogItem Comp.');
+    //this.props.appClick();
+}
 
   render() {
-    //console.log(this.props);
+    console.log(this.props);
     const { blogMessage, nowNmbr } = this.props;
     return (
       <div>
-        
+        <button>Click To Item</button>
         <h3>{this.props.dataXYZ}</h3>
         {/* <h4>{this.props.blogMessage}</h4>
                 <h4>{this.props.nowNmbr}</h4> */}
