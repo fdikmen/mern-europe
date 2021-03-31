@@ -17,6 +17,10 @@ state={name:"Tommy",age:12,address:"Newyork"}
     console.log("Click in Header.js");
     this.props.appjsClick("123");
     this.setState({name:"New Tommy"})
+  
+  }
+  changeState=()=>{
+    this.setState({name:"Changed Tommy " + Math.floor(Math.random()*4)})
   }
   render() {
     //console.log(this.props);
@@ -29,6 +33,7 @@ state={name:"Tommy",age:12,address:"Newyork"}
         {/* BIND-2 In JSX */}
         {/* <button onClick={()=>this.clickButton()}>Add</button> */}
         <button onClick={this.clickButton}>Add</button>
+        <button onClick={this.changeState}>Change State</button>
       </div>
     );
   }
