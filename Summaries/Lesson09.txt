@@ -1,0 +1,8 @@
+04/04 A. Phone Book Part-1 Summary
+04/04 B. Phone Book App Part-2 (Get data from props in List.js)
+04/04 C. Phone Book App Part-2 (Coding set Form.js State(With onInputChange))
+04/04 D. Phone Book App Part-2 (Coding addContact Func. in Contact.js)
+04/04 E. Phone Book App Part-2 (Clearing the form after adding.)
+04/04 F. Phone Book App Part-2 (Filter in List.js.)
+04/04 G. Phone Book App Part-2 (Form Null Control.)
+04/04 H. Phone Book App (SUMMARY)
