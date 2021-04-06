@@ -17,19 +17,22 @@ componentWillMount() {console.log("II.ComponentWillMount Runned.")    }
     //created by "cdm"
     componentDidMount() {
         console.log("IV.ComponentDidMount Runned.")
-        setTimeout(() => {
+        /*setTimeout(() => {
             this.setState({name:"Tommy"})
-        }, 3000);
+        }, 3000);*/
     }
-    
+   changePropsVal = ()=>{
+    this.setState({name:"Tommy New"})
+   }
     
     render() {
         console.log("III.Render Runned.")
         return (
             <div>
-                Main Comp...
-                <b>{this.state.name}</b>
-                <ChildMain/>
+                Main Comp...<br/>
+                <b>State: {this.state.name}</b>                
+                <ChildMain name={this.state.name}/>
+                <button onClick={this.changePropsVal}>Change Props</button>
             </div>
         )
     }
