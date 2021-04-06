@@ -1,0 +1,7 @@
+04/06 A. Summary
+04/06 B. React Comp. Life Cycle
+04/06 C. I-Initialization
+04/06 D. II-Mounting
+04/06 E. Class vs Func Component (Summary)
+04/06 F. III-Updation (ComponentWillReceiveProps)
+04/06 G. Summary (Life Cycle)
