@@ -1,0 +1,9 @@
+04/07 A. Summary
+04/07 B. III-Updation (shouldComponentUpdate)
+04/07 C. III-Updation (componentWillUpdate)
+04/07 D. III-Updation (componentWillUpdate-Summary)
+04/07 E. III-Updation (componentDidUpdate)
+04/07 F. IV-UnMounting (componentWillUnmount)
+04/07 G. Fetching
+04/07 H. Fetching(Set response to State)
+04/07 I. Fetching(Loading)
