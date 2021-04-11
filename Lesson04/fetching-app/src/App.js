@@ -1,7 +1,8 @@
 import './App.css';
 import UserList from './UserList'
 import About from './About'
-import {BrowserRouter,Route,Link,NavLink,Redirect} from 'react-router-dom'
+import Error from './Error'
+import {BrowserRouter,Route,Link,NavLink,Redirect, Switch} from 'react-router-dom'
 import { Component } from 'react';
 
 const UserInfo = ({match})=>
@@ -14,6 +15,10 @@ const Profile = ()=>
 {
   return <h1>Profile Page <br/> Welcome User!!!</h1>
 }
+/*const Error = ()=>
+{
+  return <h1>Error Page <br/> Upss :-(</h1>
+} MOVE TO Error.js*/
 
 class App extends Component {
   state={loggedIn:false}
@@ -39,18 +44,21 @@ class App extends Component {
 <input type="button" onClick={this.onClickButton} 
 value={this.state.loggedIn ? "Logout" : "Login"}></input>
 
-      <Route path="/" exact={true} render={()=>{return <h1>Home Page</h1>}}/>
-      <Route path="/Contact" exact strict render={()=>{return <h1>Contact Page</h1>}}/>
-      <Route path='/AboutPage/:id' exact strict component={About}/>
-      <Route path='/UserInfo/:name/:age' exact strict component={UserInfo}/>
-      <Route path="/Users" exact strict component={UserList}/>
-      <Route path="/Users2" exact> <UserList/> </Route>
-      {/* <Route path="/Profile" exact strict component={Profile}/> */}
-      <Route path="/Profile" exact strict render={
-        ()=>{
-          return this.state.loggedIn ? (<Profile/>) :<Redirect to="/"/>
-        }
-      }/>
+      <Switch>
+          <Route path="/" exact={true} render={()=>{return <h1>Home Page</h1>}}/>
+          <Route path="/Contact" exact strict render={()=>{return <h1>Contact Page</h1>}}/>
+          <Route path='/AboutPage/:id' exact strict component={About}/>
+          <Route path='/UserInfo/:name/:age' exact strict component={UserInfo}/>
+          <Route path="/Users" exact strict component={UserList}/>
+          <Route path="/Users2" exact> <UserList/> </Route>
+          {/* <Route path="/Profile" exact strict component={Profile}/> */}
+          <Route path="/Profile" exact strict render={
+            ()=>{
+              return this.state.loggedIn ? (<Profile/>) :<Redirect to="/"/>
+            }
+          }/>
+          <Route component={Error}/>
+      </Switch>
       
     </div>
     </BrowserRouter>

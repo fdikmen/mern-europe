@@ -1,0 +1,11 @@
+04/11 A. Summary
+04/11 B. Axios
+04/11 C. Routing
+04/11 D. Route with parameters 
+04/11 E. Route to Component
+04/11 F. Link
+04/11 G. NavLink
+04/11 H. Redirect
+04/11 I. Summary (BrowserRoute, Route, Link/NavLink, Redirect)
+04/11 J. Switch in Routes
+04/11 K. Component Same/Other Page

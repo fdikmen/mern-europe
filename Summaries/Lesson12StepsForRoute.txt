@@ -1,0 +1,5 @@
+ROUTER
+1-  npm i react-router-dom
+2- import {BrowserRouter} from 'react-router-dom'
+3- using BrowserRouter in Main Component
+4- set routes
