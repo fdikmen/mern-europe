@@ -12,6 +12,7 @@ class Users extends Component {
         )
     }
 }
+//export default Users
 export default LoaderHoc(Users,'users')
 
 
