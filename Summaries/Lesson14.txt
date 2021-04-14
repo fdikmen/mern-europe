@@ -1,0 +1,4 @@
+04/14 A. Summary
+04/14 B. Pure Component-> ShouldCompUpdate
+Shallow a call - shallow comparison
+04/14 C. React Hooks
