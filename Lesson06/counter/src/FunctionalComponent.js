@@ -5,6 +5,7 @@ function FunctionalComponent() {
 const [counter,setCounter]=useState(0)
 const [counter2,setCounter2]=useState(0)
 const [isVisable,addIsVis]=useState(false)
+const [timer,setTimer] = useState(0)
 
 const increase = ()=>{
     setCounter(counter+1)

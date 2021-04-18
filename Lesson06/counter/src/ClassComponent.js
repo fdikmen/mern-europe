@@ -6,10 +6,10 @@ export class ClassComponent extends Component {
     /*constructor(props) {
         super(props)    
         this.state = {
-             counter:0,isVisable:true
+             counter:0,isVisable:false
         }
     }*/
-    state = {counter:0,isVisable:true   }
+    state = {counter:0,isVisable:false,timer:0   }
     //this.setState({counter:2})
     increase = ()=>{
         this.setState(
@@ -17,12 +17,22 @@ export class ClassComponent extends Component {
     }
 //cdm
 componentDidMount() {
-    console.log("Class->componentDidMount runned.")
+    //console.log("Class->componentDidMount runned.")
+    this.myTimer = setInterval(() => {
+        this.setState({timer:this.state.timer+1})
+    }, 1000);
 }
 //cdup
 componentDidUpdate(prevProps, prevState) {
-    console.log("Class->componentDidUpdate runned.")
- }
+    //console.log("Class->componentDidUpdate runned.")
+console.log("Timer: ",this.state.timer) 
+}
+//cwun
+componentWillUnmount() {
+    console.log("componentWillUnmount runned.")
+}
+
+
 
     render() {
        /* console.log("Class Comp=>",
