@@ -1,0 +1,6 @@
+04/18 A. Summary
+04/18 B. useState(define)
+04/18 C. useState(using,setState in Func.Comp., multiple state in F.C.)
+04/18 D. useEffect
+04/18 E. componentWillUnmount in Class.Comp.
+04/18 F. componentWillUnmount in useEffect(Func.Comp.)
