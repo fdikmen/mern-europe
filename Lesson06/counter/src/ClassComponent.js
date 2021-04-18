@@ -30,6 +30,7 @@ console.log("Timer: ",this.state.timer)
 //cwun
 componentWillUnmount() {
     console.log("componentWillUnmount runned.")
+    clearInterval(this.myTimer)
 }
 
 
