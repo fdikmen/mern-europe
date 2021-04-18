@@ -25,7 +25,7 @@ componentDidMount() {
 //cdup
 componentDidUpdate(prevProps, prevState) {
     //console.log("Class->componentDidUpdate runned.")
-console.log("Timer: ",this.state.timer) 
+//console.log("Timer: ",this.state.timer) 
 }
 //cwun
 componentWillUnmount() {

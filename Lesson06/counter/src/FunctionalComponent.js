@@ -10,16 +10,21 @@ const [timer,setTimer] = useState(0)
 const increase = ()=>{
     setCounter(counter+1)
 }
-const increase2 = ()=>{
-    setCounter2(counter2+1)
-}
-const changeVisable =()=>{
-    addIsVis(!isVisable)
-}
-useEffect(
-    ()=>{console.log("Func.->useEffect")}
+const increase2 = ()=>{    setCounter2(counter2+1)}
+const changeVisable =()=>{addIsVis(!isVisable)}
+
+useEffect(()=>{
+    const myTimer = setInterval(() => {
+        setTimer(timer=>timer+1)
+    }, 1000);
+    return ()=>clearInterval(myTimer); //ComponentWillUnmount()
+},[])//ComponentDidMount + ComponentWillUnmount
+
+useEffect(()=>{console.log("Timer: ", timer)})//ComponentDidMount + ComponentDidUpdate
+
+useEffect(()=>{console.log("Func.->useEffect")}
     ,[counter,counter2]
-);
+);//ComponentDidMount + ComponentDidUpdate(with if-else//Shallow a call)
 
 //console.log("Func. Comp.=>",counter)
     return (
