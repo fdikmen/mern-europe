@@ -1,0 +1,4 @@
+04/20 A. Summary
+04/20 B. useApplication without UseContext
+04/20 C. useApplication with UseContext (createContext - ______.Provider - useContext)
+04/20 D. Summary
