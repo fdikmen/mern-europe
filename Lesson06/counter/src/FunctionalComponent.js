@@ -7,9 +7,7 @@ const [counter2,setCounter2]=useState(0)
 const [isVisable,addIsVis]=useState(false)
 const [timer,setTimer] = useState(0)
 
-const increase = ()=>{
-    setCounter(counter+1)
-}
+const increase = ()=>{setCounter(counter+1)}
 const increase2 = ()=>{    setCounter2(counter2+1)}
 const changeVisable =()=>{addIsVis(!isVisable)}
 
