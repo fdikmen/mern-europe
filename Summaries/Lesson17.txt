@@ -1,0 +1,17 @@
+04/25 A. Summary
+04/25 B. useRef/createRef
+
+UseRef(funcComp->return Same ref)/createRef(ClassComp-> return diff ref)--->refs
+Mutable(useRef) ---- Imutable(createRef)
+<div class="profile"> ... </div>
+
+04/25 C. using useRef() like a object
+04/25 D. fetch data from API
+04/25 F. useReducer (useState alternative)
+04/25 G. useReducer (alternative LESSON)
+04/25 H. useReducer (alternative LESSON)
+
+... -----> SPREAD
+myObj={x=1,y=2,z=3} ---> x - y - z
+myNewObj= {x,y,z,q,w} --> {...myObj,q,w}
+myNewObj= {x=12,y=2,z=3} --> {...myObj,x=12}
