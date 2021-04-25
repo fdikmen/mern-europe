@@ -7,9 +7,12 @@ Mutable(useRef) ---- Imutable(createRef)
 
 04/25 C. using useRef() like a object
 04/25 D. fetch data from API
-04/25 F. useReducer (useState alternative)
+04/25 E. useReducer (useState alternative)
+04/25 F. useReducer (alternative LESSON)
 04/25 G. useReducer (alternative LESSON)
-04/25 H. useReducer (alternative LESSON)
+
+
+04/25 H. Using GITHUB
 
 ... -----> SPREAD
 myObj={x=1,y=2,z=3} ---> x - y - z
