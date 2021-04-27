@@ -1,0 +1,9 @@
+1- Import useReducer
+2- Define useReducer
+3- Define your custom reducer
+4- Import yourt custom reducer
+5- Define switch-case/if-else in customReducer
+----------------------------------------------
+1- Get data from state data(CustomReducer Data)
+------------------------------------------------
+1- Send data to customReducer (dispatch)
