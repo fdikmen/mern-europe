@@ -12,13 +12,13 @@ const onDivBorderBtn = ()=>{divRef.current.style.border = "1px solid red";}
 const onViewInputValueBtn = () => {alert(inputRef.current.value)}
 //ComponentDidMount (useEffect(() =>{})) -------> Once When Create
 useEffect(() =>{
-  console.log("inputRef->",inputRef);
+  /*console.log("inputRef->",inputRef);
   console.log("inputRef.current->",inputRef.current);
   console.log("divRef->",divRef);
   console.log("divRef.current->",divRef.current);
   console.log("btn1Ref->",btn1Ref);
   console.log("btn1Ref.current->",btn1Ref.current);
-  console.log("data->",data);
+  console.log("data->",data);*/
 })
 
   return (
