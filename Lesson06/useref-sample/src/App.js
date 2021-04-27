@@ -1,6 +1,7 @@
 import "./App.css";
 import React,{useRef,useEffect} from 'react'
 import ReducerComp from './ReducerComp'
+import People from './People'
 function App() {
 const inputRef =useRef();
 const divRef = useRef();
@@ -30,6 +31,8 @@ useEffect(() =>{
       <button ref={btn1Ref} onClick={onViewInputValueBtn}>View Input Value Button</button>
     <br/>
     <ReducerComp/>
+    <hr/>
+    <People/>
     </div>
   );
 }
