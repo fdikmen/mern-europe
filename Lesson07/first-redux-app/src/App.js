@@ -11,7 +11,10 @@ function reducer(state,action)
   return "StateXYZ";}
 
 function userReducer(state ='' ,action){
-  return state;
+  switch (action.type) {
+    case 'userUpdate':return action.payload.user;  
+    default:return state;
+  }
 }
 
 function productReducer(state = [],action){
@@ -41,6 +44,8 @@ myStore.dispatch(action);
 
 //console.log("(NEW)myStore.getState()=>",myStore.getState());
 
+const actionUser={type:"userUpdate",payload:{user:'Emma'}}
+myStore.dispatch(actionUser)
 
 
 
