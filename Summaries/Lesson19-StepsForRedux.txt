@@ -1,0 +1,27 @@
+1- Install Redux (npm install @reduxjs/toolkit)
+(npm install redux react-redux)
+(npm install redux react-redux -f)
+-------------------------------------
+2-Create Your Store ()
+import {createStore} from 'redux'
+const myStore = createStore(???);
+--------------------------------------
+3-Create Your Root Reducer
+function reducer(){return "StateXYZ"}
+----------------------------------------
+4-Set rootReducer to yourStore
+const myStore = createStore(reducer)
+----------------------------------------
+5-Create a action and set type&payload data
+const action = {type:'changeTheState',payload:{newState:'My new state'}}
+---------------------------------------------
+6- Call dispatch func;
+yourStoreName.dispatch(yourAcitonObj)
+myStore.dispatch(action);
+----------------------------------------
+7- Create two paramteres in Reducer
+state & action
+
+
+
+
