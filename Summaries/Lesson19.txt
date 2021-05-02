@@ -1,0 +1,10 @@
+05/02 A. Redux Slide
+05/02 B. First Code with Redux
+store | reducer | action | dispatch
+05/02 C. Redux Concepts 
+subscribe , combineReducers, initial state (in createStore func.)
+05/02 D. ReduxDevTools Extension
+05/02 E. Provider
+---import {Provider} from 'react-redux';
+<Provider><App /></Provider>
+
