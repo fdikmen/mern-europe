@@ -1,0 +1,10 @@
+05/04 A. Summary
+05/04 B. Provider
+05/04 C. structure of Folder for Redux
+05/04 D. Connect to Any Store
+export default connect()(ComponentName)
+05/04 E. get data from Store in Any Component
+mapStateToProps
+05/04 F. send data to Store in Any Component
+mapDispatchToProps
+05/04 G. Summary
