@@ -3,9 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {createStore} from 'redux'
+import {createStore,applyMiddleware,compose} from 'redux'
 import {Provider} from 'react-redux'
 import {rootReducer} from './reducers/rootReducer'
+import ReduxThunk from 'redux-thunk';
+
+ const allExtensions =compose(
+   applyMiddleware(ReduxThunk),
+   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+ )
+
+
 function reducer(state,action)
 {
   console.log("Paramater Action=>",action);
@@ -14,14 +22,13 @@ function reducer(state,action)
     return action.payload.newState;
   }
   return "StateXYZ";}
-  
-//const myStore = createStore(reducer);
-const myStore = createStore(rootReducer,
-  {
+
+  const intialState={
     userReducer:'Tommy',
     productReducer:[{name:'Sony',type:"Music Player"}]
-  },
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+  };
+//const myStore = createStore(reducer);
+const myStore = createStore(rootReducer,intialState,allExtensions);
 console.log("(OLD)myStore.getState()=>",myStore.getState());
 
 myStore.subscribe(()=>{
@@ -37,7 +44,7 @@ myStore.dispatch(actionUser)
 //REMOVE PROVIDER, LATER AGAIN ADDED.
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={myStore}> <App /> </Provider>   
+    <Provider store={myStore}> <App number="46"/> </Provider>   
   </React.StrictMode>,
   document.getElementById('root')
 );
