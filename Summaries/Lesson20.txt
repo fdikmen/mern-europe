@@ -1,7 +1,7 @@
 05/04 A. Summary
 05/04 B. Provider
 05/04 C. structure of Folder for Redux
-05/04 D. Connect to Any Store
+05/04 D. Connect to Store from Any Component
 export default connect()(ComponentName)
 05/04 E. get data from Store in Any Component
 mapStateToProps

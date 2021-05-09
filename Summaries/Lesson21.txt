@@ -1,0 +1,2 @@
+05/09 A. Summary
+05/09 B. mapDispatchToProps

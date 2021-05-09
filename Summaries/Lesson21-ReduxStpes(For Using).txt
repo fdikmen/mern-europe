@@ -1,0 +1,22 @@
+1- in Action
+export const DELETE_USER = 'DELETE_USER'
+2- in Action
+export function deleteUser()
+{
+    return {type:DELETE_USER}
+}
+
+3- in Reducer
+import {DELETE_USER} from '../actions/userAction'
+
+4- in Reducer
+case DELETE_USER:return "";  
+
+5- using Redux. in Component (in App.js)
+import {deleteUser} from './actions/userAction'
+
+6- in Comp. (in App.js)
+const mapDispatchToProps = {deleteUser}
+
+7- use in onClick (in App.js)
+<button onClick={()=>props.deleteUser()}>Delete User</button>
