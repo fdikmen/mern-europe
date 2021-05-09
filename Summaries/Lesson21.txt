@@ -1,2 +1,16 @@
 05/09 A. Summary
 05/09 B. mapDispatchToProps
+05/09 C. First Application with Redux
+(Counter App With Redux) with (SemanticUI & bindActionCreators)
+05/09 D. Question (Import->using {} or not)
+05/09 E. merge Props
+own props, props(state-mapStateToProps), props(action-mapDispatchToProps)
+05/09 F. Quesiton Merged Props Parameters?
+05/09 G. Middleware ? & Thunk Middleware-1
+05/09 H. Thunk Middleware-2 (Install Thunk)
+- npm install redux-thunk
+- import ReduxThunk from 'redux-thunk';
+- import {...,applyMiddleware} from 'redux'
+- const myStore = createStore(...,applyMiddleware(ReduxThunk));
+05/09 I. Compose (allExtensions)
+05/09 J. Call API in Aciton(with Thunk) & Summary
