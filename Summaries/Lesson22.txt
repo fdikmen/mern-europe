@@ -1,0 +1,11 @@
+05/11 A. Summary
+05/11 B. Immutable - Mutable(Referance)
+05/11 C. Redux-Logger
+-npm i redux-logger
+-import logger from 'redux-logger'
+-applyMiddleware(...,logger)
+
+05/11 D. Promise Middleware
+-npm i redux-promise-middleware
+-import promiseMiddleware from  'redux-promise-middleware'
+-applyMiddleware(...,promiseMiddleware,...,logger)

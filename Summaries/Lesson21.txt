@@ -2,10 +2,10 @@
 05/09 B. mapDispatchToProps
 05/09 C. First Application with Redux
 (Counter App With Redux) with (SemanticUI & bindActionCreators)
-05/09 D. Question (Import->using {} or not)
+05/09 D. Question: When importing, when do we use {} and when do we not?  (Import->using {} or not)
 05/09 E. merge Props
 own props, props(state-mapStateToProps), props(action-mapDispatchToProps)
-05/09 F. Quesiton Merged Props Parameters?
+05/09 F. Question: What are the parameters during the Merging? How do they work?
 05/09 G. Middleware ? & Thunk Middleware-1
 05/09 H. Thunk Middleware-2 (Install Thunk)
 - npm install redux-thunk
@@ -13,4 +13,4 @@ own props, props(state-mapStateToProps), props(action-mapDispatchToProps)
 - import {...,applyMiddleware} from 'redux'
 - const myStore = createStore(...,applyMiddleware(ReduxThunk));
 05/09 I. Compose (allExtensions)
-05/09 J. Call API in Aciton(with Thunk) & Summary
+05/09 J. Call API in Action(with Thunk) & Summary
