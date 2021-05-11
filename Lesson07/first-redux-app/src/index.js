@@ -7,9 +7,11 @@ import {createStore,applyMiddleware,compose} from 'redux'
 import {Provider} from 'react-redux'
 import {rootReducer} from './reducers/rootReducer'
 import ReduxThunk from 'redux-thunk';
+import logger from 'redux-logger';
+import promiseMiddleware from  'redux-promise-middleware'
 
  const allExtensions =compose(
-   applyMiddleware(ReduxThunk),
+   applyMiddleware(ReduxThunk,promiseMiddleware,logger),
    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
  )
 
