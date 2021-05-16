@@ -1,0 +1,22 @@
+05/16 A Question: What is the function and procedure in the database?
+05/16 P1.01. Creating movie-app Project
+05/16 P1.02. Folder Structure
+05/16 P1.03. Adding [Redux] and [Thunk]
+npm i redux react-redux redux-thunk
+05/16 P1.04. Creating a [Store]
+05/16 P1.05. Creating [Reducers]
+05/16 P1.06. [Combine] Reducer with rootReducer
+05/16 P1.07. Setting up [Thunk] Middleware
+05/16 P1.08. Enable [Redux-DevTools-Extension]
+05/16 P1.09. Coding Redux [Provider]
+05/16 P1.10. Creating new component (MoviePage.js)
+05/16 P1.11. Using [BrowserRouter]
+npm i react-router-dom
+05/16 P1.12. Using [Link]
+05/16 P1.13. Using [Route]
+05/16 P1.14. [Connect] to [Store] from MoviePage Comp. & get state from [Store].
+05/16 P1.15. Using [Props-types] in Comp.
+05/16 P1.16. Creating new component (MovieList.js) & sending data to this component (MovieList.js) from MoviePage.js
+05/16 P1.17. Null check for movies-Array in MovieList.js
+
+05/16 A Question: Do you code in interviews?

@@ -1,6 +1,6 @@
 05/11 A. Summary
-05/11 B. Immutable - Mutable(Referance)
-05/11 C. Redux-Logger
+05/11 B. Immutable - Mutable(Reference)
+05/11 C. Redux Logger
 -npm i redux-logger
 -import logger from 'redux-logger'
 -applyMiddleware(...,logger)
