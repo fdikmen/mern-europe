@@ -1,9 +1,14 @@
 //Created by [rcredux] snippet.
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import PropTypes from 'prop-types';
 
 export class MoviePage extends Component {
-    render() {
+    static propTypes = {
+        movies:PropTypes.array.isRequired
+    }
+    render() {        
+   console.log("Props:",this.props);
         return (
             <div>
                 MoviePage Comp.
@@ -12,8 +17,8 @@ export class MoviePage extends Component {
     }
 }
 
-const mapStateToProps = (state) => ({
-    
+const mapStateToProps = ({moviesReducer}) => ({
+    movies:moviesReducer
 })
 
 const mapDispatchToProps = {
