@@ -1,4 +1,5 @@
 05/16 A Question: What is the function and procedure in the database?
+
 05/16 P1.01. Creating movie-app Project
 05/16 P1.02. Folder Structure
 05/16 P1.03. Adding [Redux] and [Thunk]
@@ -19,4 +20,4 @@ npm i react-router-dom
 05/16 P1.16. Creating new component (MovieList.js) & sending data to this component (MovieList.js) from MoviePage.js
 05/16 P1.17. Null check for movies-Array in MovieList.js
 
-05/16 A Question: Do you code in interviews?
+05/16 A Question: Do they have coding in interviews?
