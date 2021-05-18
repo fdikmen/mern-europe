@@ -156,7 +156,7 @@ export class App extends Component {
     
         <Container text>
          
-        Hello world!
+              Hello world!
               <br/>
               <Link to="movies">Movies</Link>
               <Route path="/movies" component={MoviePage}></Route>
