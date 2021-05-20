@@ -1,0 +1,8 @@
+05/19 P3.1. Part-2 Summary
+05/19 P3.2. Fixing errors in the template
+05/19 P3.3. Editing the Menu and Links
+05/19 P3.4. Modularize (Footer.js)
+05/19 P3.5. Modularize (Header.js)
+05/19 P3.6. Using the MOCK API
+05/19 P3.7. Creating a new action (moviesAction.js)
+
