@@ -22,7 +22,7 @@ export class MoviePage extends Component {
                 <h2>MoviePage Comp.</h2>
                 {errMessage 
                 ? <h3> Error Data! <br/> {errMessage}</h3>
-                : <MovieList movies={this.props.moviesRe.movies}/>
+                : <MovieList movies={this.props.moviesRe.movies} loading={this.props.moviesRe.loading}/>
                 }
                 
             </div>
