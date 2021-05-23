@@ -1,0 +1,12 @@
+05/23 P4.01. Summary
+05/23 P4.02. Writing then-catch method in Action
+05/23 P4.03. Creating Reducer (Fetch_Movies) & Bug Fixed.
+05/23 P4.04. Redux Logger Middleware
+05/23 P4.05. Questions & Bug Fix
+05/23 P4.06. Action & Reducer for FETCH_MOVIES_ERROR
+05/23 P4.07. Redux Promise Middleware
+05/23 P4.08. Listing Movies
+05/23 P4.09. SemanticUI Grid
+05/23 P4.10. Using Loading Indicator (React Spinner)
+05/23 P4.11. Coding Active Class on Menu
+05/23 P4.12. Adding new component (NewMoviePage.js)
