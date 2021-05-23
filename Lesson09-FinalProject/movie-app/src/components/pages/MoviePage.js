@@ -7,27 +7,31 @@ import {fetchMovies  } from '../../actions/moviesAction';
 
 export class MoviePage extends Component {
     static propTypes = {
-        movies:PropTypes.array.isRequired
+        moviesRe:PropTypes.object.isRequired
     }
 
     componentDidMount() {
         this.props.fetchMovies();
     }
     
-
     render() {        
-   console.log("Props:",this.props);
+   //console.log("Props:",this.props.moviesRe.error);
+    const errMessage = this.props.moviesRe.error.message
         return (
             <div>
                 <h2>MoviePage Comp.</h2>
-                <MovieList movies={this.props.movies}/>
+                {errMessage 
+                ? <h3> Error Data! <br/> {errMessage}</h3>
+                : <MovieList movies={this.props.moviesRe.movies}/>
+                }
+                
             </div>
         )
     }
 }
 
 const mapStateToProps = ({moviesReducer}) => ({
-    movies:moviesReducer
+    moviesRe:moviesReducer
 })
 
 const mapDispatchToProps = {fetchMovies }

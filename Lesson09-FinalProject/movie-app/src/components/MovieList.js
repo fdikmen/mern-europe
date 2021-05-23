@@ -1,12 +1,12 @@
 //Created by [rfcp] snippet
 import React from 'react'
-import PropTypes from 'prop-types'
+import MovieCard from './MovieCard'
 
 function MovieList({movies}) {
-    console.log("MovieList Props",movies);
+    //console.log("MovieList Props",movies);
 
     const emptyMessage= <p>There are no movies yet.</p>
-    const movieList = <div>Movie List...</div>
+    const movieList = movies.map(item => <MovieCard key={item.id} movie={item}/>)
 
     return (
         <div>
@@ -16,9 +16,7 @@ function MovieList({movies}) {
     )
 }
 
-MovieList.propTypes = {
 
-}
 
 export default MovieList
 
