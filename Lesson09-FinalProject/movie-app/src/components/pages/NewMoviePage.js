@@ -1,11 +1,27 @@
-import React from 'react'
+//Created by [rcredux] snippet
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import NewMovieForm from '../NewMovieForm'
+import { addNewMovie } from '../../actions/moviesAction';
 
-function NewMoviePage() {
-    return (
-        <div>
-            New movie
-        </div>
-    )
+export class NewMoviePage extends Component {
+    render() {
+        return (
+            <div>
+                Add New Movie Page
+                <NewMovieForm/>
+            </div>
+        )
+    }
 }
 
-export default NewMoviePage
+const mapStateToProps = ({newmovieReducer}) => {
+    return {newmovieReducer}
+}
+
+const mapDispatchToProps = {
+        addNewMovie
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(NewMoviePage)
+

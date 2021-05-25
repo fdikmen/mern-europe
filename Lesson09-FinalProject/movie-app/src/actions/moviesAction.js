@@ -5,6 +5,10 @@ export const FETCH_MOVIES_PENDING = "FETCH_MOVIES_PENDING"
 export const FETCH_MOVIES_FULFILLED = "FETCH_MOVIES_FULFILLED"
 export const FETCH_MOVIES_REJECTED = "FETCH_MOVIES_REJECTED"
 
+export const ADD_MOVIES_PENDING = "ADD_MOVIES_PENDING"
+export const ADD_MOVIES_FULFILLED = "ADD_MOVIES_FULFILLED"
+export const ADD_MOVIES_REJECTED = "ADD_MOVIES_REJECTED"
+
 /*Without REDUX PROMISE MIDDLEWARE */
 /*export function fetchMovies(){
     return dispatch => {
@@ -20,6 +24,17 @@ export function fetchMovies(){
     return dispatch => {
         dispatch({type:"FETCH_MOVIES",
         payload:axios.get(`${API_BASE}/movies`).then(res=>res.data)})    
+    }
+}
+
+export function addNewMovie({title,cover}){
+    return dispatch => {
+        dispatch(
+            {
+                type:"ADD_MOVIES",
+                payload:axios.post(`${API_BASE}/movies`,{title,cover})
+            }
+        )
     }
 }
 
