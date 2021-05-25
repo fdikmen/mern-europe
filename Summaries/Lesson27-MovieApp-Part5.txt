@@ -1,0 +1,9 @@
+05/25 P5.1. Summary & Bug Fixed
+05/25 P5.2. Adding new component (NewMovieForm.js)
+05/25 P5.3. Using State in NewMovieForm.js (useState)
+05/25 P5.4. Add Image-Box to Form (NewMovieForm.js)
+05/25 P5.5. Validation for Form Inputs (Custom)
+05/25 P5.6. Validation-2 for Form Inputs (SemanticUI Form-Field.Error)
+05/25 P5.7. Validation-3 for Form Inputs (Alternative - SemanticUI Form-Field.Error)
+05/25 P5.8. Creating reducer (newMovieReducer.js) & Action for newMovie
+05/25 P5.9. Connect Store (SwitchCase, mapDispatchToProps)
