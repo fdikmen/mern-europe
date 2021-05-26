@@ -1,0 +1,10 @@
+05/26 P6.1. Summary
+05/26 P6.2. Post data to API
+05/26 P6.2. Post data to API (Re)
+05/26 P6.3. [Loading] when posting data
+05/26 P6.4. Error Handling in Form Page
+05/26 P6.5. [Redirect] to movieList page
+05/26 P6.6. [Redirect] Bug Fixed
+05/26 Question: Why are props used instead of pulling data directly with connect?
+05/26 P6.7. Edit/Delete Button Design
+05/26 P6.8. Using [Link] with Edit Button
