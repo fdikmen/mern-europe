@@ -9,7 +9,7 @@ export class NewMoviePage extends Component {
         return (
             <div>
                 Add New Movie Page
-                <NewMovieForm/>
+                <NewMovieForm done={this.props.newmovieReducer.done} errorText={this.props.newmovieReducer.error} loading={this.props.newmovieReducer.loading} addNewMovie={this.props.addNewMovie}/>
             </div>
         )
     }

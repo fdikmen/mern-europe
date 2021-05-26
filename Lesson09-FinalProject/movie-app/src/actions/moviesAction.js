@@ -28,6 +28,7 @@ export function fetchMovies(){
 }
 
 export function addNewMovie({title,cover}){
+    console.log("Aciton DATA",title,cover);
     return dispatch => {
         dispatch(
             {

@@ -10,7 +10,7 @@ function MovieList({movies,loading}) {
     const emptyMessage= <p>There are no movies yet.</p>
     const movieList = (
       <Grid>
-        <Grid.Row columns={4}>
+        <Grid.Row columns={3}>
           {movies.map((item) => (
             <Grid.Column key={item.id}>
               <MovieCard movie={item} />
