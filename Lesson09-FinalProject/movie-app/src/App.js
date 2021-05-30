@@ -16,9 +16,9 @@ export class App extends Component {
         <Container text>
           Hello world!
           <br />
-          <Route exact path="/movies" component={MoviePage}></Route>
-          <Route exact path="/movie/:id" component={NewMoviePage}></Route>
+          <Route exact path="/movies" component={MoviePage}></Route>          
           <Route exact path="/movies/new" component={NewMoviePage}></Route>
+          <Route exact path="/movie/:id" component={NewMoviePage}></Route>
         </Container>
         <Footer />
       </div>

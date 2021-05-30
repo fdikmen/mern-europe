@@ -2,7 +2,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import NewMovieForm from '../NewMovieForm'
-import { addNewMovie,getMovie } from '../../actions/moviesAction';
+import { addNewMovie,getMovie,updateMovie } from '../../actions/moviesAction';
 
 export class NewMoviePage extends Component {
     componentDidMount() {
@@ -22,6 +22,7 @@ export class NewMoviePage extends Component {
               errorText={this.props.newmovieReducer.error}
               loading={this.props.newmovieReducer.loading}
               addNewMovie={this.props.addNewMovie}
+              updateMovie={this.props.updateMovie}
               movie={this.props.movie}
               gotMovie={this.props.newmovieReducer.gotMovie}
             />
@@ -36,7 +37,7 @@ return {newmovieReducer,
 }
 
 const mapDispatchToProps = {
-        addNewMovie,getMovie
+        addNewMovie,getMovie,updateMovie
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(NewMoviePage)

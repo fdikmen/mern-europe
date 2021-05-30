@@ -2,9 +2,11 @@ import React from 'react'
 import { useState,useEffect } from 'react'
 import { Button, Image, Form,Input,Message } from 'semantic-ui-react'
 import InlineError from './InlineError'
-import { Redirect } from "react-router-dom";
+import { Redirect,useParams } from "react-router-dom";
 
-const NewMovieForm = ({addNewMovie,loading,errorText,done,movie,gotMovie}) => {
+const NewMovieForm = ({addNewMovie,updateMovie,loading,errorText,done,movie,gotMovie}) => {
+  const params = useParams() 
+  const _id = movie ? movie.id : params.id;
     const[title,setTitle]=useState(movie ? movie.title : '');
     const[cover,setCover]=useState(movie ? movie.cover : '');
     const[error,setError]=useState({});
@@ -28,7 +30,12 @@ const NewMovieForm = ({addNewMovie,loading,errorText,done,movie,gotMovie}) => {
 
       setError(errMessages);
       if (Object.keys(errMessages).length === 0) {
-        addNewMovie({ title, cover });
+        if (!_id) {
+          addNewMovie({ title, cover });
+        }
+        else{
+          updateMovie({ _id,title, cover });
+        }
         setSubmitStatus(true);
       }
     };
