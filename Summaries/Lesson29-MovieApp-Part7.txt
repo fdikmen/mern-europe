@@ -1,0 +1,10 @@
+05/30 P7.01. Routing
+05/30 P7.02. Bind data in form page
+05/30 P7.03. Bug Fixed (Bind data in form page)
+05/30 P7.04. Update Action-Reducer
+05/30 P7.05. Deleting a movie
+05/30 P7.06. Bug Fixed (Deleting a movie)
+05/30 P7.07. Creating HomePage Component
+05/30 P7.08. Deploy
+05/30 P7.09. Deploy with Surge
+05/30 P7.10. Bug Fixed (Surge)
