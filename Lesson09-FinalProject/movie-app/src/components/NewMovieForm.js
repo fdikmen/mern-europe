@@ -13,7 +13,7 @@ const NewMovieForm = ({addNewMovie,updateMovie,loading,errorText,done,movie,gotM
     const [submitStatus, setSubmitStatus] = useState(false);
 
     useEffect(() => {
-      if (gotMovie && gotMovie.title) {
+      if (!movie && gotMovie && gotMovie.title) {
         setTitle(gotMovie.title);
       setCover(gotMovie.cover);
       }
