@@ -1,29 +1,37 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import { Button, Image, Form,Input,Message } from 'semantic-ui-react'
 import InlineError from './InlineError'
 import { Redirect } from "react-router-dom";
 
-const NewMovieForm = ({addNewMovie,loading,errorText,done}) => {
-    const[title,setTitle]=useState('');
-    const[cover,setCover]=useState('');
+const NewMovieForm = ({addNewMovie,loading,errorText,done,movie,gotMovie}) => {
+    const[title,setTitle]=useState(movie ? movie.title : '');
+    const[cover,setCover]=useState(movie ? movie.cover : '');
     const[error,setError]=useState({});
-    const[submitStatus,setSubmitStatus]=useState(false)
+    const [submitStatus, setSubmitStatus] = useState(false);
 
-    const onFormSubmit=()=>{
-        const errMessages={}
-        if(!title)
-        {errMessages.title="Title can't be blank.";}
-        if(!cover)
-        {errMessages.cover="Cover can't be blank.";}
+    useEffect(() => {
+      if (gotMovie && gotMovie.title) {
+        setTitle(gotMovie.title);
+      setCover(gotMovie.cover);
+      }
+    }, [gotMovie]);
 
-        setError(errMessages);
-        if(Object.keys(errMessages).length===0)
-        {
-          addNewMovie({title,cover});
-          setSubmitStatus(true);
-        }
-    }
+    const onFormSubmit = () => {
+      const errMessages = {};
+      if (!title) {
+        errMessages.title = "Title can't be blank.";
+      }
+      if (!cover) {
+        errMessages.cover = "Cover can't be blank.";
+      }
+
+      setError(errMessages);
+      if (Object.keys(errMessages).length === 0) {
+        addNewMovie({ title, cover });
+        setSubmitStatus(true);
+      }
+    };
 const formData=  <Form onSubmit={onFormSubmit} loading={loading}>
 <Form.Field
   control={Input}
