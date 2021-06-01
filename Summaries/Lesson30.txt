@@ -1,0 +1,17 @@
+06/01 01- Event - Thread Based (Theoretical knowledge)
+06/01 02- Helloworld.js with nodeJS
+06/01 03- Extensions for nodeJS
+--npm Intellisense
+--ESLint
+--REST Client
+--Node Debug
+06/01 04- NPM (Node Package Manager)
+06/01 05- Installing any package (Slugify)
+06/01 06- Import vs Require
+06/01 07- Local vs Global Package
+06/01 08- Commands
+npm root --global
+npm root -g      --> Root Folder Path for global package
+npm list [-g] [--depth=0]   -->listing installed package
+cls | clear ---> Clearing console
+06/01 09- Questions (Why is the local package not installed on my computer?)
