@@ -1,0 +1,37 @@
+06/02 A. Creating a project with NPM (npm init)
+06/02 B. Using set init package.json
+https://choosealicense.com/licenses/
+npm set init.author.name "FDIKMEN"
+npm set init.version "2.0.0"
+npm  init -y
+
+06/02 C. Using npm cache
+npm i -g npm-cache --> npm i [packageName] --> npm-cache i [packageName]
+
+06/02 D. Using --save / -s ----> npm i [packageName] --save
+	 --no-save
+
+06/02 E. Dependencies in package.json
+06/02 F. Installing custom package version & listing old package
+npm uninstall [packageName] [-g]
+npm i [packageName]@[version]
+npm outdated
+npm i [packageName]@latest
+npm update [packageName]
+npm update
+-------------------------------
+--version -v
+update for NPM: [sudo] npm i -g npm@latest
+for windows
+Set-ExecutionPolicy Unrestricted -Scope CurrentUser -Force
+
+06/02 G. Dev-Dependencies in package.json
+npm i [packageName] --save-dev
+
+06/02 H. Scripts in package.json
+npm run [scriptName]
+
+06/02 I. Installing multiple package
+06/02 J. Removing a package
+npm uninstall [packageName] [-g]
+npm uninstall [packageName] --no-save
