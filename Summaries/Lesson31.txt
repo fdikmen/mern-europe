@@ -22,16 +22,16 @@ npm update
 -------------------------------
 --version -v
 update for NPM: [sudo] npm i -g npm@latest
-for windows
+for windows 
 Set-ExecutionPolicy Unrestricted -Scope CurrentUser -Force
-
-06/02 G. Dev-Dependencies in package.json
+06/02 G. Re-Installing NODEJS
+06/02 H. Dev-Dependencies in package.json
 npm i [packageName] --save-dev
 
-06/02 H. Scripts in package.json
+06/02 I. Scripts in package.json
 npm run [scriptName]
 
-06/02 I. Installing multiple package
-06/02 J. Removing a package
+06/02 J. Installing multiple package
+06/02 K. Removing a package
 npm uninstall [packageName] [-g]
 npm uninstall [packageName] --no-save
