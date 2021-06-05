@@ -1,0 +1,15 @@
+06/05 A. Event & I/O Process (Event-Create - Trigger)
+CMD/CTRL + C
+06/05 B. Using params with Emit
+06/05 C. once/on for event Creating
+06/05 D. get file path (__filename / __dirname)
+06/05 E. reading a file fs.ReadFile/fs.ReadFileSync
+06/05 F. Creating & Writing with FS
+06/05 G. Deleting File
+06/05 H. How the Web Works? (Http Server/Response-Request)
+06/05 I. Creating a simple server with nodeJS
+06/05 J. using .end() method
+06/05 K. nodemon
+06/05 L. serve a html file
+06/05 M. Http Methods
+06/05 N. Routing with nodeJS
