@@ -8,6 +8,7 @@ let progress = 0;
 
 
 fs.stat(file,(err,data)=>{
+    console.log("Data",data);
     const total = data.size;
     console.log("File Total: " , total);
 
