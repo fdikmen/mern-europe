@@ -1,0 +1,21 @@
+06/06 A. Streams
+06/06 B. Creating Readable Stream (fs.createReadStream())
+06/06 C. Checking the total file size
+06/06 D. Show files read with percentage (Progressbar) ---> fs.stat()
+https://www.geeksforgeeks.org/node-js-fs-stat-method/
+06/06 E. Creating Writeable Stream
+(fs.createWriteStream())
+06/06 F. Get Ext from file
+06/06 G. Performance
+https://www.stats.govt.nz/large-datasets/csv-files-for-download/
+06/06 H. Express (Theoretical knowledge)
+06/06 I. Hello World with ExpressJS
+npm i express
+06/06 J. Express Http Methods
+06/06 K. node-snippets
+06/06 L. PUG (.pug/.jade)
+06/06 M. Rendering pug file
+06/06 N. Snippets (Pug/Faker)
+1- Sass/Less/Stylus/Pug/Jade/Typescript/Javascript Compile Hero Pro
+2- vscode-faker
+
