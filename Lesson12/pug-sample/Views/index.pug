@@ -2,6 +2,12 @@ html
     head 
         title Hello PUG! 
     body
+        include menu 
+        hr
+        =name
+        br
         span(style="color:white;background-color:red;") PUG is HERE! 
         br
-        |Hello Pug in new line
+        |Hello Pug in new line PHONE: #{phone}
+        hr
+        include footer.pug
