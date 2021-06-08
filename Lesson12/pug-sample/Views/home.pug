@@ -1,0 +1,17 @@
+extends layout
+
+block append stylesheet
+    link(href="homeStyle.css")
+
+block append content 
+    | Home Page Content
+    br
+    - var itemName = "test test"
+    - function capitalize(param) {return param.toUpperCase() }
+    | ITEM-NAME : #{capitalize(itemName)}
+
+block scripts
+    script(src="home.js") 
+
+block append sample01 
+    h2 HOME PAGE FOOTER

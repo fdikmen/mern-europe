@@ -3,9 +3,9 @@
 06/06 C. Checking the total file size
 06/06 D. Show files read with percentage (Progressbar) ---> fs.stat()
 https://www.geeksforgeeks.org/node-js-fs-stat-method/
-06/06 E. Creating Writeable Stream
+06/06 E. Creating Writable Stream
 (fs.createWriteStream())
-06/06 F. Get Ext from file
+06/06 F. Get Extension from file
 06/06 G. Performance
 https://www.stats.govt.nz/large-datasets/csv-files-for-download/
 06/06 H. Express (Theoretical knowledge)

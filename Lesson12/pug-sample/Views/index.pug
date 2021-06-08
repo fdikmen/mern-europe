@@ -2,12 +2,35 @@ html
     head 
         title Hello PUG! 
     body
+        include head.pug
         include menu 
         hr
+        // This is comment line  ...
         =name
+        //- This is comment line ...
         br
+        - var jobTitle = 'Regional Web Assistant'
+        - var jobDesc = 'Job description ....'
+        =jobTitle
+        br 
+        =jobDesc
         span(style="color:white;background-color:red;") PUG is HERE! 
         br
-        |Hello Pug in new line PHONE: #{phone}
+        |Hello Pug in new line PHONE: #{phone} JOB: #{jobTitle.toUpperCase()}
+        hr
+        |JS IN PUG 
+        br
+        - var number=10;
+        //-unless
+        if !number 
+            | Number doesnt exist.
+        else if number===15
+            | The number is 10.
+        else 
+            | The number isnt 10.
+        hr
+        ul
+            each val in [1, 2, 3, 4, 5]
+                li= val
         hr
         include footer.pug
