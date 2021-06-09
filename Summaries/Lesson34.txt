@@ -1,0 +1,14 @@
+06/08 A. Summary (PUG)
+06/08 B. Send Parameter to PUG file
+CTRL(CMD)+SHIFT+P ---> for Faker
+06/08 C. Pug Include
+06/08 D. Comment line in pug // or //-
+06/08 E. Variable in pug - var number=12
+06/08 F. JS Codes in pug
+06/08 G. IF in pug
+06/08 H. Iteration in pug
+06/08 I. Layout & Block Structure in Pug
+06/08 J. Pug Summary
+06/08 K. Using function in PUG
+06/08 L. Define static folder in Express,
+npm init -y
