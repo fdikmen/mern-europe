@@ -1,0 +1,14 @@
+06/16 A. Summary
+06/16 B. mongoose.connection.on event(open/error)
+06/16 C. Create a schema(table) with Mongoose
+Camel Case ---> upper/lower
+upper-> TableoneTabletwo
+lower-> tableoneTabletwo
+06/16 D. Mongoose Scheme Data Types
+06/16 E. Schema Keywords: Type, Default, Required, Unique
+06/16 F. All Mongoose Queries (CRUD)
+06/16 G. Find()
+06/16 H. FindOne()
+06/16 I. FindById()
+06/16 J. Find[] vs FindOne{} vs FindById{}
+06/16 K. Save()
