@@ -6,6 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var postsRouter = require('./routes/post.Route');
 
 const mongoose = require('mongoose')
 mongoose.connect('mongodb://localhost:27017/mern',
@@ -13,7 +14,8 @@ mongoose.connect('mongodb://localhost:27017/mern',
  .then(()=>{console.log('MongoDB Connection has been made.')})
  .catch((err)=>{console.log('Connection  failed. Detail:',err)});
 
-
+mongoose.connection.on('open',()=>{console.log("Connection success!")})
+mongoose.connection.on('error',()=>{console.log("Connection failed!")})
 
 var app = express();
 
@@ -29,6 +31,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/posts', postsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
