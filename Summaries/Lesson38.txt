@@ -1,0 +1,23 @@
+06/19 A. Summary
+06/19 B. UpdateMany() - UpdateOne()
+06/19 C. FindByIdAndUpdate()
+06/19 D. ???
+06/19 E. DeleteMany(), DeleteOne(), FindByIdAndRemove()
+06/19 F. Delete vs Remove
+06/19 G. Sorting
+06/19 H. Limit & Skip
+alldata()
+.skip((pageNum-1)*10)
+.limit(10)
+
+
+
+
+
+
+
+
+
+
+
+
