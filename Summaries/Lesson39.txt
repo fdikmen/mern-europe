@@ -1,0 +1,13 @@
+06/20 A. Summary
+06/20 B. Creating new Model And Routing (Author)
+06/20 C. Post Data to Author Model
+06/20 D. Aggregate: $match
+06/20 E. Aggregate: $group
+06/20 F. Aggregate: $project
+06/20 G. Aggregate: $sort, $limit, $skip
+06/20 H. Creating new Model And Routing (Book)
+06/20 I. Aggregate: $lookup (table join)
+06/20 J. Aggregate: $lookup - $unwind
+06/20 K. $exists
+06/20 L. Validation in Schema(Model)
+06/20 M. MongoDB Atlas
