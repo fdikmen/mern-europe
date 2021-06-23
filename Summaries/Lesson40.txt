@@ -1,0 +1,8 @@
+06/22 A. MovieApp(NodeJS) Summary (End Point)
+06/22 B. Creating GitHub Repo
+06/22 C. Creating Project with Express  Generator
+06/22 D. Creating Database on MongoDB Atlas
+06/22 E. Creating Model (for Movie.js)
+06/22 F. Creating Route (for movies.js)
+06/22 G. Creating POST method for movies endpoint
+06/22 H. Creating GET method for movies endpoint
