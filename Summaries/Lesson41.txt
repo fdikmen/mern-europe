@@ -1,0 +1,16 @@
+06/23 A. Summary and using then-catch in routes
+06/23 B. ENDPOINT GET /api/movies/:movieId
+06/23 C. Error Handler
+06/23 D. ENDPOINT PUT /api/movies/:movieId
+06/23 E. Using -new- operator in findByIdAndUpdate Methods
+06/23 F. ENDPOINT DELETE /api/movies/:movieId
+06/23 G. ENDPOINT TOP10 /api/movies/top10
+06/23 H. What order should the routes be in?
+06/23 I. ENDPOINT /api/movies/between/:startYear/:endYear
+06/23 J. Creating Model,Route (for Director.js) and ENDPOINTS
+Get, GetById, Post, Put, Delete
+06/23 K. Aggregate for directorModel
+06/23 L. Question
+06/23 M. get only exist data (unwind-preserveNullAndEmptyArrays)
+06/23 N. Aggregate for movieModel
+
