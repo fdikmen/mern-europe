@@ -1,0 +1,12 @@
+06/27 A. Creating new Schema and Route (User)
+06/27 B. Bcrypt
+06/27 C. Bcrypt Bug Fixed
+06/27 D. JWT (JsonWebToken)
+06/27 E. Coding JWT Token
+06/27 F. Token Verify Middleware
+
+
+req----------------------------->res
+req--------->Middleware--------->res
+req<---------Middleware
+		---->next()----->res
